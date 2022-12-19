@@ -24,7 +24,7 @@ _socket:
     int     80h                 ; chama o kernel
     
 _bind:
-    mov     edi, eax            ; guarda valor de retorno de SYS_SOCKETCALL (linha 16) para edi
+    mov     edi, eax            ; guarda valor de retorno de SYS_SOCKETCALL para edi
     push    dword 0x00000000    ; endereço ip 0.0.0.0
     push    word 0x5c11         ; porta 4444 em hexadecimal, ordem de byte inversa.
     push    word 2              ; AF_INET
