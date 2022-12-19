@@ -1,9 +1,12 @@
 # Projeto Socket em um Shellcode
 
 ### O que é um shellcode?
+
 Em segurança da informação, um shellcode é um trecho de código que é usado durante a exploração de alguma vulnerabilidade.
 
-É chamado shellcode por normalmente envolver a abertura de uma shell durante a execução, mas não é necessariamente limitado a  isso.
+É chamado shellcode por normalmente envolver a abertura de uma shell durante a execução, mas não é necessariamente limitado a isso.
+
+Esse tipo clássico de shellcode é interessante quando há um programa rodando em uma porta de uma máquina na rede que você pode interagir ou quando esse programa possui permissões maiores que a do seu usuário atual, pois ao abrir uma shell com seu shellcode, você terá acesso à maquina com possivelmente as mesmas permissões desse tal programa. Portanto você pode conseguir acesso a uma máquina ou realizar uma escalada de privilégios.
 
 Nesse projeto o codigo em assembly é basicamente um socket simples.
 
